@@ -29,7 +29,7 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-r = model.fit(x_train,y_train, validation_data=(x_test,y_test), epochs=10)
+r = model.fit(x_train,y_train, validation_data=(x_test,y_test), epochs=25)
 
 #Plot loss and accuracy
 plt.plot(r.history['loss'], label='loss')
