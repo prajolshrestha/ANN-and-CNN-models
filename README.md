@@ -18,7 +18,7 @@ a dense layer with 128 neurons and a rectified linear unit (ReLU) activation fun
 a dropout layer with a 20% dropout rate, and 
 a dense layer with 10 neurons and a softmax activation function. 
 The model is compiled with the Adam optimizer, sparse categorical crossentropy loss function, and accuracy as the metric. 
-The model is trained on the training images and labels for 10 epochs.( We can choose any number of epoch, but choose wisely) 
+The model is trained on the training images and labels for 25 epochs.( We can choose any number of epoch, but choose wisely) 
 
 Evaluation and Prediction
 The model is evaluated on the testing images and labels using the evaluate() method. 
