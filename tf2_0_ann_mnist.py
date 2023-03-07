@@ -7,7 +7,7 @@ import numpy as np
 mnist = tf.keras.datasets.mnist
 (x_train,y_train),(x_test,y_test) = mnist.load_data() #loads two tuple
 x_train, x_test = x_train /255.0, x_test/255.0 #scale data in range 0-1
-#x_train.shape, x_test.shape
+
 
 # Model creation and Fit
 model = tf.keras.models.Sequential([
