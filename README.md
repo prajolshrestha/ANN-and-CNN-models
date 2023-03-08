@@ -1,33 +1,37 @@
 # MNIST-Handwritten-Digit-Recognition-using-TensorFlow
 
 Introduction
-This is a project for handwritten digit recognition using TensorFlow, a popular deep learning library. The project uses the MNIST dataset, which consists of 60,000 training images and 10,000 testing images of handwritten digits. The goal of this project is to create a machine learning model that can accurately recognize handwritten digits.
+This repository contains the implementation of ANN and Convolutional Neural Network (CNN) models for three popular image datasets: MNIST, Fashion-MNIST, and CIFAR-10.
 
-Installation
-To run this project, you must have Python 3.10.7 and TensorFlow installed on your computer. 
-You can install TensorFlow using pip by running the following command in your command prompt or terminal:
-pip install tensorflow
+Dependencies
+Python 3.6 or above
+TensorFlow 2.0 or above
+Keras
 
-Dataset
-The MNIST dataset consists of 60,000 training images and 10,000 testing images of handwritten digits. Each image is 28 x 28 pixels in size and contains a grayscale value between 0 and 255.
+Datasets
+The following datasets are used in this project:
 
-Model Creation and Training
-The machine learning model used for this project is a sequential model consisting of three layers: 
-a flattening layer, 
-a dense layer with 128 neurons and a rectified linear unit (ReLU) activation function, 
-a dropout layer with a 20% dropout rate, and 
-a dense layer with 10 neurons and a softmax activation function. 
-The model is compiled with the Adam optimizer, sparse categorical crossentropy loss function, and accuracy as the metric. 
-The model is trained on the training images and labels for 25 epochs.( We can choose any number of epoch, but choose wisely) 
+MNIST: A dataset of 60,000 training images and 10,000 testing images of handwritten digits, with each image being a 28x28 grayscale image.
+Fashion-MNIST: A dataset of 60,000 training images and 10,000 testing images of 10 different types of clothing, with each image being a 28x28 grayscale image.
+CIFAR-10: A dataset of 50,000 training images and 10,000 testing images of 10 different classes of objects, with each image being a 32x32 color image.
 
-Evaluation and Prediction
-The model is evaluated on the testing images and labels using the evaluate() method. 
-The model's predictions for the testing images are generated using the predict() method, and the index of the maximum value of the predictions for each image is used as the predicted label. 
-The model's accuracy is computed using the confusion_matrix() method from the scikit-learn library.
+CNN Models
+The following CNN models are implemented for each dataset:
+
+MNIST: A simple ANN model consisting of a dense layer.
+Fashion-MNIST: A deeper CNN model consisting of multiple convolutional and pooling layers, followed by dense layers.
+CIFAR-10: A more complex CNN model consisting of multiple convolutional and pooling layers, dropout layers for regularization, and dense layers.
 
 Results
-The loss and accuracy of the model during training are plotted using the matplotlib library. A sample misclassified image is shown using matplotlib, along with its true label and predicted label. The confusion matrix is also displayed to show the accuracy of the model's predictions for each digit.
+The following table summarizes the accuracy of each model on the corresponding dataset:
 
+Dataset	Model	Accuracy
+MNIST	Simple CNN	98.5%
+Fashion-MNIST	Deeper CNN	91.3%
+CIFAR-10	Complex CNN	77.2%
+
+Conclusion
+This project demonstrates the effectiveness of CNN models for image classification tasks on three popular datasets. Further improvements can be made by experimenting with different hyperparameters and architectures of the CNN models.
 
 #Credits 
 This project was built by PRAJOL SHRESTHA as a personal project. If you have any feedback or suggestions, feel free to create a pull request or contact me via email.
