@@ -1,4 +1,4 @@
-# MNIST-Handwritten-Digit-Recognition-using-TensorFlow
+# ANN and CNN models
 
 Introduction
 This repository contains the implementation of ANN and Convolutional Neural Network (CNN) models for three popular image datasets: MNIST, Fashion-MNIST, and CIFAR-10.
