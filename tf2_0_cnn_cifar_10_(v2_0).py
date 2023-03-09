@@ -78,8 +78,8 @@ plt.plot(r.history['loss'], label='loss')
 plt.plot(r.history['val_loss'], label='val_loss')
 plt.legend()
 
-plt.plot(r.history('accuracy'), label='accuracy')
-plt.plot(r.history('val_accuracy'), label='val_accuracy')
+plt.plot(r.history['accuracy'], label='accuracy')
+plt.plot(r.history['val_accuracy'], label='val_accuracy')
 plt.legend()
 
 model.evaluate(x_test,y_test)
@@ -87,7 +87,7 @@ model.evaluate(x_test,y_test)
 p_test = model.predict(x_test).argmax(axis=1)
 
 #confusion_matrix
-cm = tf.math.confusion_matrix(x_test,p_test)
+cm = tf.math.confusion_matrix(labels=y_test, predictions=p_test)
 
 import seaborn as sn
 plt.figure(figsize=(10,7))
