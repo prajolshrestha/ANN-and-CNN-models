@@ -29,6 +29,7 @@ Dataset	Model	Accuracy
 MNIST	Simple CNN	98.5%
 Fashion-MNIST	Deeper CNN	91.3%
 CIFAR-10	Complex CNN	77.2%
+CIFAR-10 Revisited	Complex CNN	98.2% (50 epoch)
 
 Conclusion
 This project demonstrates the effectiveness of CNN models for image classification tasks on three popular datasets. Further improvements can be made by experimenting with different hyperparameters and architectures of the CNN models.
