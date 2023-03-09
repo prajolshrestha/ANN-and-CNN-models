@@ -88,7 +88,6 @@ p_test = model.predict(x_test).argmax(axis=1)
 
 #confusion_matrix
 cm = tf.math.confusion_matrix(x_test,p_test)
-cm
 
 import seaborn as sn
 plt.figure(figsize=(10,7))
